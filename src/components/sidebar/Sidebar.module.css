@@ -1,0 +1,26 @@
+.sidebar{
+    background: #f2f3f4;
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    max-width: 72px;
+    padding: 0
+}
+.sibebarItem{
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    /* background-color: red; */
+    height: 80px;
+    align-items: center;
+}
+.active{
+    background-color: #eb3f3f;
+    color: white;
+}
+.sibebarItem :hover{
+    /* color: green;
+    width:2000px */
+}

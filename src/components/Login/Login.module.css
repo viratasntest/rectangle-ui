@@ -1,0 +1,14 @@
+.loginContainer{
+    padding: 2rem;
+    width: 500px;
+    background-color: #F8F9FA;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 120px;
+}
+.loginText{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
