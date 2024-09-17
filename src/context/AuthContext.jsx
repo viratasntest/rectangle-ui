@@ -23,10 +23,10 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (email, password) => {
         try {
-            const data = await instance.post("/auth/signin", { email, password });
+            const data = await instance.post("/auth/login", { email, password });
             Cookies.set('token', data.data.token);
             setUser(data.data.token);
-            router.push('/dashboard');
+            router.push('/home');
             console.log(data,'SSSsssssssss')
         } catch (err) {
             console.error(err);

@@ -1,12 +1,13 @@
 .sidebar{
-    background: #f2f3f4;
+    background: #1D1D1F;
     min-height: 88vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     /* justify-content: space-evenly; */
-    max-width: 72px;
-    padding: 0
+    max-width: 17%;
+    padding: 1rem;
+    height:100vh
 }
 .sibebarItem{
     display: flex;

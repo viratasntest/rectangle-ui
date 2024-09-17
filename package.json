@@ -1,5 +1,5 @@
 {
-  "name": "streetswag-ui",
+  "name": "rectangle-ui",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -22,9 +22,12 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.0.4",
     "eslint-plugin-react": "^7.35.0",
-    "globals": "^15.9.0"
+    "globals": "^15.9.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.11"
   }
 }

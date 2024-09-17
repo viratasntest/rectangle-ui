@@ -4,10 +4,17 @@ import React from "react";
 
 function LoginPage() {
   return (
-    <div>
-      {" "}
+    <div className="login-page">
+      {/* {" "}
       <NavbarComponent />
-      <Login />
+       */}
+      <div className="bg"></div>
+      <div className="bg bg2"></div>
+      <div className="bg bg3"></div>
+      <div className="content">
+        <h1>RECTANGLE</h1>
+        <Login />
+      </div>
     </div>
   );
 }

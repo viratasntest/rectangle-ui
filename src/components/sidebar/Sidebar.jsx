@@ -1,54 +1,52 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
+import { FaChevronDown, FaHome } from "react-icons/fa";
 import { FaPeopleArrows } from "react-icons/fa6";
-import { MdVerified } from "react-icons/md";
+import { MdOutlineMailOutline, MdVerified } from "react-icons/md";
 import { IoDocumentAttachSharp } from "react-icons/io5";
 import { IoSettings } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
 import styles from "./Sidebar.module.css";
 import classNames from "classnames";
 import { useRouter } from "next/router";
+import { CiSquarePlus } from "react-icons/ci";
 
 const ICON_SIZE = 24;
 
 function Sidebar() {
-  const sidebarItems = [
-    {
-      label: "Dashboard",
-      icon: <FaHome size={ICON_SIZE} />,
-      route: "/home",
-    },
-    {
-      label: "Network",
-      icon: <FaPeopleArrows size={ICON_SIZE} />,
-      route: "/network",
-    },
-    {
-      label: "Background Verification",
-      icon: <MdVerified size={ICON_SIZE} />,
-      route: "/bgv",
-    },
-    {
-      label: "Documents",
-      icon: <IoDocumentAttachSharp size={ICON_SIZE} />,
-      route: "/docs",
-    },
-    {
-      label: "Settings",
-      icon: <IoSettings size={ICON_SIZE} />,
-      route: "/settings",
-    },
-    {
-      label: "Support",
-      icon: <BiSupport size={ICON_SIZE} />,
-      route: "/help",
-    },
-  ];
+  const sidebarItems = [];
   const router = useRouter();
-  console.log(router.pathname);
+
+  const handleClickEmail = () => {
+    router.push('/emails')
+  }
+
+  const handleClickProjects = () =>{
+    router.push('/projects')
+  }
+
   return (
     <div className={styles.sidebar}>
-      {sidebarItems?.map((sidebarElement) => {
+      <h2 className="text-white">Rectangle</h2>
+      <div onClick={handleClickEmail} className="mt-4 flex text-white items-center text-normal justify-between sidebar-hover p-2 cursor-pointer">
+        <div className="flex text-white items-center text-medium">
+        <MdOutlineMailOutline />
+          <p className="text-[white] ml-4">Emails</p>
+        </div>
+        <div className="text-small text-[white] bg-[#0B757A] px-2 rounded-[4px]">
+          23
+        </div>
+      </div>
+      <div onClick={handleClickProjects} className="flex text-white items-center text-medium justify-between sidebar-hover p-2 cursor-pointer">
+        <div className="flex text-white items-center ">
+          <FaChevronDown />
+          <p className="text-[white] ml-4">Projects</p>
+        </div>
+        <div>
+        <CiSquarePlus size={18} />
+        </div>
+      </div>
+
+      {/* {sidebarItems?.map((sidebarElement) => {
         return (
           <div
             className={classNames(
@@ -62,7 +60,7 @@ function Sidebar() {
             </div>
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 }

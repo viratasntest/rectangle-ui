@@ -6,17 +6,19 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function DashboardLayout({ children }) {
   return (
-    <div>
+    <div >
       <ProtectedRoute>
-        <NavbarComponent />
-        <Container fluid>
-          <Row className="p-0">
-            <Sidebar />
-            <Col md={11}>{children}</Col>
-          </Row>
-        </Container>
+        <div className="flex w-[100%]">
+          <Sidebar />
+          <div className="w-[100%]">
+            <NavbarComponent />
+            <div className="p-2 max-h-[90vh] overflow-scroll">
+            {children}
+            </div>
+           
+          </div>
+        </div>
       </ProtectedRoute>
-
     </div>
   );
 }

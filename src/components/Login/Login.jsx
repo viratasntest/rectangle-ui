@@ -31,6 +31,7 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         className="mt-2"
         placeholder={"Enter your password"}
+        type="password"
       />
       <p className="mt-3 text-small">
         Forgot your password? <span className="primaryText">Reset here</span>
