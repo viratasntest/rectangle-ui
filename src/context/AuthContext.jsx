@@ -1,8 +1,8 @@
 import { createContext, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import axios from '../utils/axios';
+import axios from '../utils/client';
 import Cookies from 'js-cookie';
-import instance from '../utils/axios';
+import instance from '../utils/client';
 
 const AuthContext = createContext();
 

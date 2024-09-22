@@ -20,7 +20,7 @@ function EmailRow() {
       </div>
       <div className="text-[14px] w-[70%]">
         This is a simple email body lorem ispsium text is added here this is a
-        email body lorem ispsium text is added here this is a simple...
+        email body lorem ispsium teas sadhsajdg jashx...
       </div>
       <div className="text-[12px] text-[#A9A9A9] font-semibold">
        16th sept

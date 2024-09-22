@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "./Login.module.css";
 import UIButton from "@/widgets/Button/UIButton";
 import { useContext, useState } from "react";
-import instance from "@/utils/axios";
+import instance from "@/utils/client";
 import AuthContext from "@/context/AuthContext";
 
 const Login = () => {
@@ -36,7 +36,7 @@ const Login = () => {
       <p className="mt-3 text-small">
         Forgot your password? <span className="primaryText">Reset here</span>
       </p>
-      <p style={{ marginTop: "-16px" }} className="text-small">
+      <p style={{ marginTop: "" }} className="text-small">
         Dont have an account? <span className="primaryText">Signup</span>
       </p>
       <div className="d-flex justify-content-center w-100 mt-3">
